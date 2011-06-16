@@ -1,0 +1,11 @@
+application: uservoice-gae-sso
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /admin
+  script: main.py
+  login: admin
+- url: /.*
+  script: main.py

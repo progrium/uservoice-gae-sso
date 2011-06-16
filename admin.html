@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Uservoice SSO</title>
+  </head>
+  <body>
+    <h2>Settings</h2>
+    <form method="post">
+      <label>Account:</label> <input type="text" name="account" value="{{config.account}}" /><br />
+      <label>API Key:</label> <input type="text" name="api_key" value="{{config.api_key}}" /><br />
+      <label>Domain:</label> <input type="text" name="domain" value="{{config.domain}}" /><br />
+      <input type="submit" value="Save Settings" />
+    </form>
+    <h2>Endpoints</h2>
+    <dl>
+      <dt>Sign-in URL</dt>
+      <dd>http://{{self.request.host}}/sso/login</dd>
+      <dt>Sign-out URL</dt>
+      <dd>http://{{self.request.host}}/sso/logout</dd>
+    </dl>
+    <hr />
+    Current user: {{user.email}} <a href="{{logout_url}}">Logout</a>
+  </body>
+</html>
