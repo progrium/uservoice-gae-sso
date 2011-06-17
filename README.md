@@ -10,3 +10,7 @@ This is an App Engine app intended to run on your Google Apps domain that gives 
  * Use the App Engine SDK to deploy
  * Browse to http://<appname>.appspot.com and put in your Uservoice account name, API key, and domain. Hit save.
  * Go to your Uservoice settings and under authentication options, select SSO and put in the URLs
+
+## License
+
+MIT
